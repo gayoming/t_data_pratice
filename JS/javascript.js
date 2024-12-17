@@ -14,11 +14,7 @@ $(function () {
 
     //메뉴
     $('.right_header > .menu').on('click', function () {
-        $('.wrap .menu_div').stop().slideDown();
-
-    });
-    $('.wrap .menu_div').mouseleave(function () {
-        $(this).stop().slideUp();
+        $('.wrap .menu_div').stop().slideToggle();
     });
     //작은 탭메뉴
     $('.milage_tablist li a').on('click', function (e) {
